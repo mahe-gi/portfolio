@@ -17,45 +17,37 @@ import ProjectCard from "./ui/ProjectCard";
 
 const projectData = [
   {
-    image: "/project",
+    image: "/bookstore",
     category: "fullstack",
-    name: "Web-Wallet",
+    name: "Bookstore",
     description:
-      "This Website made using react-js ,Node js ,Express and MongoDb with beautiful ui/ux design",
-    link: "/",
-    github: "/",
+      "This Website made using react-js ,Node js ,Express and MongoDb with beautiful ui/ux",
+    link: "https://bookstore.101dev.tech/",
+    github: "https://github.com/mahe-gi/bookstore.git",
   },
   {
-    image: "/blog1",
-    category: "react-js",
-    name: "blog -101dev",
-    description: "This Website made using react-js ,Express ,MongoDB ,Node Js",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/Social-media-101community",
+    image: "/blog",
     category: "next-js",
-    name: "comminity- 101dev",
+    name: "blog",
     description: "This Website made using Next-js with beautiful ui/ux design",
-    link: "/",
-    github: "/",
+    link: "https://blog.101dev.tech/",
+    github: "https://github.com/mahe-gi/blog",
   },
   {
     image: "/101dev.tech",
     category: "fullstack",
     name: "101dev",
     description: "This Website made using Next-js with beautiful ui/ux design",
-    link: "/",
-    github: "/",
+    link: "https://www.101dev.tech/",
+    github: "/https://github.com/mahe-gi/101dev",
   },
   {
     image: "/portfolio",
     category: "next-js",
     name: "portfolio",
     description: "This Website made using react-js with beautiful ui/ux design",
-    link: "/",
-    github: "/",
+    link: "https://www.chmahesh.me/",
+    github: "/https://github.com/mahe-gi/portfolio",
   },
 ];
 
@@ -83,7 +75,8 @@ const Work = () => {
             }}
             spaceBetween={30}
             modules={[Pagination]}
-            pagination={{ clickable: true }}>
+            pagination={{ clickable: true }}
+          >
             {/* beginning 4 projects  */}
             {projectData.slice(0, 4).map((project, index) => {
               return (

@@ -40,8 +40,12 @@ const Hero = () => {
               </Link>
               <Button
                 variant="secondary"
-                className="gap-x-2 bg-slate-700 text-white dark:bg-slate-700 hover:bg-slate-600">
-                <Link href="resume" target="_blank">
+                className="gap-x-2 bg-slate-700 text-white dark:bg-slate-700 hover:bg-slate-600"
+              >
+                <Link
+                  href="https://drive.google.com/file/d/1u6kVbG21-ToRgGtXs8kJrIVUq5MUo7VH/view?usp=sharing"
+                  target="_blank"
+                >
                   View CV{" "}
                 </Link>
               </Button>

@@ -8,64 +8,34 @@ const projectData = [
   {
     image: "/work/3.png",
     category: "react-js",
-    name: "101dev",
+    name: "bookstore",
     description:
       "this website made using React Js , NodeJs, Express Js ,MongoDB",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "react-js",
-    name: "101dev",
-    description:
-      "this website made using React Js , NodeJs, Express Js ,MongoDB",
-    link: "/",
+    link: "https://bookstore.101dev.tech/",
     github: "/",
   },
   {
     image: "/work/2.png",
     category: "next-js",
-    name: "101dev",
-    description:
-      "this website made using React Js , NodeJs, Express Js ,MongoDB",
-    link: "/",
+    name: "Blog",
+    description: "this website made using Next js",
+    link: "https://blog.101dev.tech/",
     github: "/",
   },
   {
     image: "/work/1.png",
     category: "next-js",
     name: "101dev",
-    description:
-      "this website made using React Js , NodeJs, Express Js ,MongoDB",
-    link: "/",
+    description: " ",
+    link: "https://www.101dev.tech/",
     github: "/",
   },
   {
     image: "/work/3.png",
     category: "next-js",
     name: "101dev",
-    description:
-      "this website made using React Js , NodeJs, Express Js ,MongoDB",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "next-js",
-    name: "101dev",
-    description:
-      "this website made using React Js , NodeJs, Express Js ,MongoDB",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/1.png",
-    category: "fullstack",
-    name: "101dev",
-    description:
-      "this website made using React Js , NodeJs, Express Js ,MongoDB",
-    link: "/",
+    description: " this portfolio website made using Next Js ",
+    link: "https://www.chmahesh.me/",
     github: "/",
   },
   {
@@ -119,7 +89,8 @@ const Projects = () => {
                   onClick={() => setCategory(category)}
                   value={category}
                   key={index}
-                  className="capitalize w-[162px] md:w-auto">
+                  className="capitalize w-[162px] md:w-auto"
+                >
                   {category}
                 </TabsTrigger>
               );
