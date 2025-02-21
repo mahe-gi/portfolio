@@ -116,6 +116,21 @@ const skillData = [
   },
 ];
 
+// Experience data
+const experienceData = [
+  {
+    company: "Codsoft",
+    role: "Full Stack Developer Intern",
+    years: "Jan 2024 - Feb 2024",
+    description: [
+      "Developed and maintained web applications using React.js and Next.js",
+      "Collaborated with team members to implement responsive designs",
+      "Worked on multiple projects including portfolio and e-commerce applications",
+    ],
+  },
+  // ... other experience items
+];
+
 const About = () => {
   const getData = (arr, title) => {
     return arr.find((item) => item.title === title);
@@ -239,27 +254,29 @@ const About = () => {
                         </div>
 
                         <div className="flex flex-col gap-y-8">
-                          {getData(qualifications, "experience").data.map(
-                            (item, index) => {
-                              const { company, role, years } = item;
-                              return (
-                                <div className="flex gap-x-8 group" key={index}>
-                                  <div className="h-[84px] w-[1px] bg-border relative ml-2">
-                                    <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
-                                  </div>
-                                  <div>
-                                    <div className="font-semibold text-xl leading-none mb-2">
-                                      {company}
-                                    </div>
-                                    {/* <div className="text-lg leading-none text-muted-foreground mb-4">{role}</div> */}
-                                    <div className="text-base font-medium">
-                                      {years}
-                                    </div>
-                                  </div>
+                          {experienceData.map((item, index) => (
+                            <div className="flex gap-x-8 group" key={index}>
+                              <div className="h-[84px] w-[1px] bg-border relative ml-2">
+                                <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
+                              </div>
+                              <div>
+                                <div className="font-semibold text-xl leading-none mb-2">
+                                  {item.company}
                                 </div>
-                              );
-                            }
-                          )}
+                                <div className="text-lg leading-none text-muted-foreground mb-4">
+                                  {item.role}
+                                </div>
+                                <div className="text-base font-medium">
+                                  {item.years}
+                                </div>
+                                <ul className="text-muted-foreground mt-2 ml-4 list-disc">
+                                  {item.description.map((desc, idx) => (
+                                    <li key={idx}>{desc}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </div>
+                          ))}
                         </div>
                       </div>
                     </div>

@@ -14,13 +14,15 @@ const links = [
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
   const path = usePathname();
   return (
-    <nav className={`${containerStyles}`}>
+    <nav className={`${containerStyles}`} role="navigation" aria-label="Main navigation">
       {links.map((link, index) => {
         return (
           <Link
             href={link.path}
             key={index}
-            className={`capitalize ${linkStyles}`}>
+            className={`capitalize ${linkStyles}`}
+            aria-current={link.path === path ? 'page' : undefined}
+          >
             {link.path === path && (
               <motion.span
                 initial={{ y: "-100%" }}

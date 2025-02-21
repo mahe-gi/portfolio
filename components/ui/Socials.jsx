@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const icons = [
   {
-    path: "https://www.youtube.com/maheyt",
+    path: "https://www.youtube.com/@mahe_yt",
     name: <RiYoutubeFill />,
   },
   {
@@ -22,9 +22,8 @@ const icons = [
     path: "https://github.com/mahe-gi",
     name: <RiGithubFill />,
   },
-
   {
-    path: "https://www.instagram.com/mahe_ins/",
+    path: "https://www.instagram.com/_mahe8/",
     name: <RiInstagramFill />,
   },
 ];
