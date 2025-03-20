@@ -6,7 +6,7 @@ import { TabsContent } from "@radix-ui/react-tabs";
 
 const projectData = [
   {
-    image: "/work/3.png",
+    image: "/work/bookstore.png",
     category: "react-js",
     name: "bookstore",
     description:
@@ -15,7 +15,7 @@ const projectData = [
     github: "/",
   },
   {
-    image: "/work/2.png",
+    image: "/work/blog.png",
     category: "next-js",
     name: "Blog",
     description: "this website made using Next js",
@@ -23,7 +23,7 @@ const projectData = [
     github: "/",
   },
   {
-    image: "/work/1.png",
+    image: "/work/4.png",
     category: "next-js",
     name: "101dev",
     description: " ",
@@ -31,15 +31,7 @@ const projectData = [
     github: "/",
   },
   {
-    image: "/work/3.png",
-    category: "next-js",
-    name: "101dev",
-    description: " this portfolio website made using Next Js ",
-    link: "https://www.chmahesh.me/",
-    github: "/",
-  },
-  {
-    image: "/work/1.png",
+    image: "/work/4.png",
     category: "fullstack",
     name: "101dev",
     description:
@@ -48,7 +40,7 @@ const projectData = [
     github: "/",
   },
   {
-    image: "/work/2.png",
+    image: "/work/4.png",
     category: "fullstack",
     name: "101dev",
     description:

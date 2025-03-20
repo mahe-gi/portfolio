@@ -11,7 +11,6 @@ import {
   RiArrowDownSLine,
 } from "react-icons/ri";
 
-import DevImg from "./DevImg";
 import Socials from "./Socials";
 
 const Hero = () => {

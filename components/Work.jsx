@@ -17,7 +17,7 @@ import ProjectCard from "./ui/ProjectCard";
 
 const projectData = [
   {
-    image: "/bookstore",
+    image: "/work/bookstore.png",
     category: "fullstack",
     name: "Bookstore",
     description:
@@ -26,28 +26,29 @@ const projectData = [
     github: "https://github.com/mahe-gi/bookstore.git",
   },
   {
-    image: "/blog",
+    image: "/work/blog.png",
     category: "next-js",
     name: "blog",
     description: "This Website made using Next-js with beautiful ui/ux design",
     link: "https://blog.101dev.tech/",
     github: "https://github.com/mahe-gi/blog",
   },
+  
   {
-    image: "/101dev.tech",
+  image: "/work/portfolio.png",
+  category: "next-js",
+    name: "portfolio",
+    description: "This Website made using react-js with beautiful ui/ux design",
+    link: "https://www.chmahesh.me/",
+    github: "/https://github.com/mahe-gi/portfolio",
+  },
+  {
+    image: "/work/4.png",
     category: "fullstack",
     name: "101dev",
     description: "This Website made using Next-js with beautiful ui/ux design",
     link: "https://www.101dev.tech/",
     github: "/https://github.com/mahe-gi/101dev",
-  },
-  {
-    image: "/portfolio",
-    category: "next-js",
-    name: "portfolio",
-    description: "This Website made using react-js with beautiful ui/ux design",
-    link: "https://www.chmahesh.me/",
-    github: "/https://github.com/mahe-gi/portfolio",
   },
 ];
 
