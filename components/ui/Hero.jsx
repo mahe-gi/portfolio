@@ -60,7 +60,7 @@ const Hero = () => {
             <Badges
               containerStyles="absolute top-[80%] -left-[1rem] hover:scale-110 transition-transform bg-white/90 dark:bg-accent/90"
               icon={<RiTodoFill className="text-primary" />}
-              endCountNum={1}
+              endCountNum={5}
               endCountText="+"
               badgeText="Finished Projects"
             />
