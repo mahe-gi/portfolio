@@ -1,11 +1,60 @@
+@font-face {
+  font-family: maheFont;
+  src: url(./fonts/WorkSans-VariableFont_wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: maheFont;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+}
+
+header {
+  padding: 24px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  height: 30px;
+  width: 30px;
+}
+.logo h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.logo > h1 > a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  display: flex;
+  gap: 50px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+#menu > ul > li {
+  font-weight: 400;
+  list-style: none;
+}
+#menu > ul > li > a {
+  color: black;
+  text-decoration: none;
 }
