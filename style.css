@@ -8,14 +8,22 @@
   padding: 0;
   box-sizing: border-box;
   font-family: maheFont;
+  --primary: black;
+  --secondary: white;
+  --h1: 25px;
+  --h1weight: 600;
+  --h2: 16px;
+  --h2weight: 400;
+  --headings: 22px;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+  background-color: var(--secondary);
 }
-
+/* header start */
 header {
   padding: 24px 40px;
   width: 100%;
@@ -29,17 +37,11 @@ header {
   align-items: center;
   gap: 10px;
 }
-.logo img {
-  height: 30px;
-  width: 30px;
-}
-.logo h1 {
-  font-size: 22px;
-  font-weight: 600;
-}
 .logo > h1 > a {
+  font-size: var(--h1);
+  font-weight: var(--h1weight);
   text-decoration: none;
-  color: black;
+  color: var(--primary);
 }
 nav {
   display: flex;
@@ -51,18 +53,97 @@ nav ul {
   gap: 40px;
 }
 #menu > ul > li {
-  font-weight: 400;
   list-style: none;
 }
 #menu > ul > li > a {
-  color: black;
+  color: var(--primary);
+  font-size: var(--h2);
   text-decoration: none;
+  font-weight: var(--h2weight);
+}
+/* header ends */
+
+/* hero section start */
+main {
+  width: 100%;
+  height: 100%;
+}
+#hero {
+  width: 100%;
+  height: 75%;
+  display: flex;
+}
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left .dp {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
 }
 
+.dp > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10% 30%;
+  box-shadow: 0px 10px 30px black;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.right > h1 {
+  font-size: var(--h1);
+  font-weight: var(--h1weight);
+}
+.right > .letsconnect > h1 {
+  font-size: var(--h1);
+  font-weight: var(--h1weight);
+}
+
+.right > h3 {
+  font-size: var(--h2);
+  font-weight: var(--h2weight);
+}
+.letsconnect {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+.right .letsconnect > h1 {
+  font-size: var(--headings);
+  font-weight: var(--h1weight);
+}
+
+.letsconnect > span > a {
+  text-decoration: none;
+}
+.letsconnect > span > a > img {
+  margin: 0px 6px;
+  height: 25px;
+  width: 25px;
+}
+
+/* hero section end */
+
+/* header media queries starts here */
 @media screen and (max-width: 660px) {
   #home {
     width: 100%;
     flex-direction: column;
+  }
+  header {
+    padding: 20px 40px;
   }
   .logo {
     display: flex;
@@ -75,3 +156,60 @@ nav ul {
     gap: 20px;
   }
 }
+/* header media queries ends here */
+
+/* hero media queries starts */
+
+@media screen and (max-width: 950px) {
+  .left .dp {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .right {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #hero {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left .dp {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .right {
+    padding: 30px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  .right > h1,
+  h3 {
+    text-align: center;
+  }
+  .letsconnect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* hero media queries end */
