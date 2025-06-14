@@ -58,3 +58,20 @@ nav ul {
   color: black;
   text-decoration: none;
 }
+
+@media screen and (max-width: 660px) {
+  #home {
+    width: 100%;
+    flex-direction: column;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 20px;
+  }
+}
