@@ -8,10 +8,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: maheFont;
-  /* --primary: #f1efec; */
   --primary: #030303;
-  /* --secondary: #030303; */
   --secondary: #f1efec;
+  /* --primary: #f1efec;
+  --secondary: #030303; */
   --tfp: #123458;
   --tfs: #d4c9be;
   --h1: 25px;
@@ -209,11 +209,16 @@ main {
 
 #projects {
   width: 100%;
-  height: 60vh;
+  height: 55vh;
+  margin-bottom: 50px;
 }
 .headingpr {
   width: 100%;
   text-align: center;
+}
+.headingpr > h2 {
+  font-size: var(--headings);
+  font-weight: var(--h1weight);
 }
 .cardsOfPr {
   width: 100%;
@@ -268,6 +273,7 @@ main {
   padding: 3px 8px;
   border-radius: 10px;
   cursor: pointer;
+  color: var(--primary);
 }
 .cardLiveLinks {
   padding: 0px 10px;
@@ -284,6 +290,38 @@ main {
   color: var(--primary);
 }
 /* projects section end*/
+/* contact section starts */
+#contact {
+  width: 100%;
+  height: 25vh;
+  margin-top: 10px;
+}
+.titleContact {
+  text-align: center;
+}
+.titleContact > h2 {
+  font-size: var(--headings);
+  font-weight: var(--h1weight);
+}
+.contactInfo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.cwraper > h4 {
+  padding: 10px;
+  font-size: var(--h2);
+  font-weight: var(--h2weight);
+}
+.cwraper > h4 > span {
+  font-size: var(--h2);
+  font-weight: var(--h1weight);
+  color: var(--tfp);
+}
+/* contact section end */
 
 /* header and projects media queries starts here */
 @media screen and (max-width: 660px) {
@@ -414,7 +452,7 @@ main {
 
   #projects {
     width: 100%;
-    height: 50vh;
+    height: 100%;
   }
 }
 
