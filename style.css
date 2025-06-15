@@ -205,7 +205,87 @@ main {
 
 /* About section end */
 
-/* header media queries starts here */
+/* projects section starts*/
+
+#projects {
+  width: 100%;
+  height: 60vh;
+}
+.headingpr {
+  width: 100%;
+  text-align: center;
+}
+.cardsOfPr {
+  width: 100%;
+  height: 100%;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card {
+  height: 90%;
+  width: 27%;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cardHead {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.cardHead > h4 {
+  font-size: 1.5vw;
+  font-weight: var(--h1weight);
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  gap: 10px;
+  height: 50%;
+  width: 100%;
+}
+.cardBody > p {
+  font-size: 1vw;
+  font-weight: var(--h2weight);
+}
+.cardTechStack {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.cardTechStack > span {
+  font-size: 1vw;
+  font-weight: 600;
+  background-color: var(--tfs);
+  padding: 3px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.cardLiveLinks {
+  padding: 0px 10px;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cardLiveLinks > a {
+  padding: 2px 8px;
+  font-size: 1.1vw;
+  border: 1px solid black;
+  text-decoration: none;
+  color: var(--primary);
+}
+/* projects section end*/
+
+/* header and projects media queries starts here */
 @media screen and (max-width: 660px) {
   #home {
     width: 100%;
@@ -224,10 +304,60 @@ main {
     display: flex;
     gap: 20px;
   }
+  /* Projects media quries here starts */
+
+  #projects {
+    width: 100%;
+  }
+  .headingpr {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .cardsOfPr {
+    width: 100%;
+    height: 85vh;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .card {
+    height: 250px;
+    width: 80%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cardHead > h4 {
+    font-size: 2vw;
+    font-weight: var(--h1weight);
+  }
+  .cardBody > p {
+    font-size: 1.5vw;
+    font-weight: var(--h2weight);
+  }
+  .cardTechStack > span {
+    font-size: 1.2vw;
+  }
+  .cardLiveLinks {
+    padding: 0px 0px;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .cardLiveLinks > a {
+    padding: 2px 8px;
+    border: 1px solid black;
+    color: var(--primary);
+  }
+  /* Projects media quries here end*/
 }
 /* header media queries ends here */
 
-/* hero media queries starts */
+/* hero  media queries starts */
 
 @media screen and (max-width: 950px) {
   .left .dp {
@@ -240,6 +370,7 @@ main {
     padding: 10px;
   }
 }
+/* hero and Project */
 @media screen and (max-width: 700px) {
   #hero {
     width: 100%;
@@ -280,8 +411,14 @@ main {
     align-items: center;
     gap: 20px;
   }
+
+  #projects {
+    width: 100%;
+    height: 50vh;
+  }
 }
-/* hero media queries end */
+
+/* hero  and project media queries end */
 
 /* about section media quries start */
 @media screen and (max-width: 950px) {
