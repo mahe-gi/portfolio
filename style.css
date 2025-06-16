@@ -262,6 +262,10 @@ main {
   padding: 10px 30px;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.5s ease;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 .cardHead {
   width: 100%;
@@ -302,6 +306,11 @@ main {
   border-radius: 10px;
   cursor: pointer;
   color: var(--primary);
+  transition: all 0.5s ease;
+}
+.cardTechStack > span:hover {
+  background-color: rgba(0, 0, 0, 0.696);
+  color: var(--secondary);
 }
 .cardLiveLinks {
   padding: 0px 10px;
@@ -309,6 +318,10 @@ main {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.cardLiveLinks > a:hover {
+  background-color: var(--primary);
+  color: white;
 }
 .cardLiveLinks > a {
   padding: 2px 8px;
